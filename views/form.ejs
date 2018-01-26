@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<% include ./partials/head %>
   <body>
     <form class="profileForm">
       What's your name:<br>
@@ -17,15 +14,53 @@
       Biography:<br>
         <input type="text" name="biography"><br>
       Interests/Hobbies: (Please select one or more)<br>
+        <input type="checkbox" name="Art" value="Art">Art
+        <input type="checkbox" name="Reading" value="Reading">Reading<br>
+        <input type="checkbox" name="Gaming" value="Gaming">Gaming
+        <input type="checkbox" name="Writing" value="Writing">Writing<br>
+        <input type="checkbox" name="Athletics" value="Athletics">Athletics
+        <input type="checkbox" name="Business" value="Business">Business<br>
+        <input type="checkbox" name="Photography" value="Photography">Photography
+        <input type="checkbox" name="Film" value="Film">Film<br>
+        <input type="checkbox" name="Electronics" value="Electronics">Electronics
+        <input type="checkbox" name="Outdoor Recreation" value="Outdoor Recreation">Outdoor Recreation<br>
+        <input type="checkbox" name="Health" value="Health">Health
+        <input type="checkbox" name="Fashion" value="Fasion">Fashion<br>
+        <input type="checkbox" name="Travel" value="Travel">Travel
+        <input type="checkbox" name="Collecting" value="Collecting">Collecting<br>
+        <input type="checkbox" name="Cooking" value="Cooking">Cooking
+        <input type="checkbox" name="Music" value="Music">Music<br>
         <!-- List of interests with checkboxes next to import  -->
       Career Interests: (Please choose one)<br>
         <!-- Drop down menu with list of career fields  -->
+      <div class ="dropdown">
+      <select class="btn btn-secondary dropdown-toggle">
+        <option value="I don't know">I don't know</option> 
+        <option value="Music">Music</option> 
+        <option value="Video Games">Video Games</option> 
+        <option value="Fashion">Fashion</option> 
+        <option value="Graphic Design">Graphic Design</option> 
+        <option value="Film">Film</option> 
+        <option value="Travel">Travel</option> 
+        <option value="Tech">Tech</option> 
+      </select>
+      </div>
+      <br>
       General Availability: (Please choose one)<br>
+      <div class ="dropdown">
+      <select class="btn btn-secondary dropdown-toggle">
+        <option value="Weekdays">Weekdays Only</option> 
+        <option value="Weekends">Weekends Only</option> 
+        <option value="Both">Weekdays and Weekends</option> 
+      </select>
+      </div>
         <!-- Three options being Weekdays Only, Weekends Only, and Weekdays + Weekends. -->
     </form>
     <div class="saveButton">
-      <button type="button">Save & Continue</button>
+      <button type="button" class="btn-primary">Save & Continue</button>
     </div>
     <!-- Progress dots  -->
   </body>
+  <% include ./partials/footer %>
+<% include ./partials/scripts %>
 </html>
