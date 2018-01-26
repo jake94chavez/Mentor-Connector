@@ -59,24 +59,24 @@ router.delete('/mentors/:id', function deleteMentor(req, res) {
 });
 
 // update a mentor in the database
-router.put('/mentors/:id', function updateMentor(req, res) {
-  console.log('updating id ', req.params.id);
-  console.log('received body ', req.body);
+// router.put('/mentors/:id', function updateMentor(req, res) {
+//   console.log('updating id ', req.params.id);
+//   console.log('received body ', req.body);
 
-  db.Mentor.findOne({_id: req.params.id}, function(err, foundMentor) {
-    if (err) { console.log('error', err); }
-    foundMentor. = req.body.;
-    foundMentor. = req.body.;
-    foundMentor. = req.body.;
-    if (req.body.) {
-      foundMentor. = req.body.
-    }
-    foundMentor.save(function(err, saved) {
-      if(err) { console.log('error', err); }
-      res.json(saved);
-    });
-  });
-});
+//   db.Mentor.findOne({_id: req.params.id}, function(err, foundMentor) {
+//     if (err) { console.log('error', err); }
+//     foundMentor. = req.body.;
+//     foundMentor. = req.body.;
+//     foundMentor. = req.body.;
+//     if (req.body.) {
+//       foundMentor. = req.body.
+//     }
+//     foundMentor.save(function(err, saved) {
+//       if(err) { console.log('error', err); }
+//       res.json(saved);
+//     });
+//   });
+// });
 
 // MENTEE ROUTES
 router.get('/mentees', function api_index (req, res){
@@ -133,22 +133,22 @@ router.delete('/mentees/:id', function deleteMentee(req, res) {
 });
 
 // update a mentee in the database
-router.put('/mentees/:id', function updateMentee(req, res) {
-  console.log('updating id ', req.params.id);
-  console.log('received body ', req.body);
+// router.put('/mentees/:id', function updateMentee(req, res) {
+//   console.log('updating id ', req.params.id);
+//   console.log('received body ', req.body);
 
-  db.Mentee.findOne({_id: req.params.id}, function(err, foundMentee) {
-    if (err) { console.log('error', err); }
-    foundMentee. = req.body.;
-    foundMentee. = req.body.;
-    foundMentee. = req.body.;
-    if (req.body.) {
-      foundMentee. = req.body.
-    }
-    foundMentee.save(function(err, saved) {
-      if(err) { console.log('error', err); }
-      res.json(saved);
-    });
-  });
-});
+//   db.Mentee.findOne({_id: req.params.id}, function(err, foundMentee) {
+//     if (err) { console.log('error', err); }
+//     foundMentee. = req.body.;
+//     foundMentee. = req.body.;
+//     foundMentee. = req.body.;
+//     if (req.body.) {
+//       foundMentee. = req.body.
+//     }
+//     foundMentee.save(function(err, saved) {
+//       if(err) { console.log('error', err); }
+//       res.json(saved);
+//     });
+//   });
+// });
 module.exports = router;
