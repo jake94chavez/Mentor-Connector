@@ -13,7 +13,7 @@ var MenteeSchema = new Schema ({
 	age: Number,
 	interests: [String],
 	desiredField: String,
-	mentor: Mentor.Schema,
+	mentor: Mentor.Schema
 });
 
 var Mentee = mongoose.model('Mentee', MenteeSchema)
