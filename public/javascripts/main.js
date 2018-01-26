@@ -16,7 +16,7 @@ function generateMentorHtml(mentor) {
   "              <!-- begin book internal row -->" +
   "                <div class='row'>" +
   "                  <div class='col-md-3 col-xs-12 thumbnail book-art'>" +
-  "                     <img src='" + "http://placehold.it/400x400'" +  " alt='book image'>" +
+  "                     <img src='" + "https://i.imgur.com/pE3YM2W.png'" +  " alt='mentor image'>" +
   "                  </div>" +
   "                  <div class='col-md-9 col-xs-12'>" +
   "                    <ul class='list-group'>" +
@@ -40,8 +40,8 @@ function generateMentorHtml(mentor) {
   "              </div>" + // end of panel-body
 
   "              <div class='panel-footer'>" +
-  "                <button class='btn btn-info edit-book'>Bookmark</button>" +
-  "                <button class='btn btn-success put-book'>Select</button>" +
+  "                <button class='btn btn-info bookmark'>Bookmark</button>" +
+  "                <button class='btn btn-success Select'>Select</button>" +
   "              </div>" +
 
   "            </div>" +
