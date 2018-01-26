@@ -27,7 +27,6 @@ https://trello.com/b/jtX8YJqI/team-hackatron
 
 ![alt text](https://i.imgur.com/ZoVQnol.png)
 
-
 ### User Personas
 
 #### Mentor
@@ -43,7 +42,7 @@ Goals & Needs: Help cultivate her city, wants to pass on her experience to futur
 
 Frustrations: Traffic/long commutes, people who don’t recycle, wasted potential, and digital laggard.
 
-Interests: Sci-Fi novels, paddle boarding, and meal planning.
+Interests: Reading, outdoor recreation, health.
 
 #### Mentee
 
@@ -58,7 +57,7 @@ Goals & Needs: Craves experiences, wants to narrow down his options, wants to be
 
 Frustrations: Overwhelmed with future option, feels pressured to go to college from his family since he’s the first generation to get to, and wants guidance and feels lost with where to go in life.
 
-Interests: Guitar, MMORPG’s, and is team captain of his varsity lacrosse team.
+Interests: Music, video games, and, athletics.
 
 ### User Stories
 
