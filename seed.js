@@ -64,7 +64,7 @@ var mentorList = [
 		name: 'Daria Culton',
 		email: 'daria.culton@nonprofit.org',
 		age: 35,
-		interests: ['Reading', ' Outdoors'],
+		interests: ['Reading', ' Outdoor Recreation'],
 		field: 'Tech',
 	},
 	{
