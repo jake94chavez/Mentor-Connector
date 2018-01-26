@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<html lang='en'>
+<% include ./partials/head %>
+<% include ./partials/nav %>
   <body>
       <h1><%= title %></h1>
-        <h2>The place for mentees to connect with qualified mentors.></h2>
+        <h2>The place for mentees to connect with qualified mentors.</h2>
   <br>
       <div class="signUpButton">
-        <button type="button">Sign Up</button>
+        <a href="/userChoice"><button type="button" class = "btn-success">Sign Up</button></a>
       </div>
   <br>
       <p>Already have a Mentor Connector account?</p>
       <div class="loginButton">
-        <button type="button">Login</button>
+        <button type="button" class= "btn-success">Login</button>
       </div>
   <br>
-      <h2>By using Mentor Connector, you agree to Mentor Connector's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</h2>
+      <h6>By using Mentor Connector, you agree to Mentor Connector's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</h6>
     </body>
+<% include ./partials/footer %>
+<% include ./partials/scripts %>
 </html>

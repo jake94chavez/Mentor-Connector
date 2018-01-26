@@ -16,7 +16,7 @@ var MentorSchema = new Schema ({
 	},
 	interests: [String],
 	field: String,
-	mentee: Mentee.Schema,
+	mentee: Mentee.Schema
 });
 
 var Mentor = mongoose.model('Mentor', MentorSchema);
