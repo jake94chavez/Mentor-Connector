@@ -2,84 +2,70 @@ var db = require('./models');
 
 var menteeList = [
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Sam Edwards',
+		email: 'sam.edwards@imastudent.com',
+		age: 16,
+		interests: ['Books', 'Gaming'],
+		desiredField: 'I don\'t know' 
+	},
+	{
+		name: 'Silas Rodgers',
+		email: 'silas.rodgers@imastudent.com',
+		age: 17,
+		interests: ['Photography', 'Film', 'Electronics'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Taylor Craighead',
+		email: 'taylor.craighead@imastudent.com',
+		age: 16,
+		interests: ['Gaming', 'Electronics'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Garrett Krischke',
+		email: 'garrett.krischke@imastudent.com',
+		age: 15,
+		interests: ['Gaming', 'Creative Writing', 'Acting', 'Books'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Reid Sullivan',
+		email: 'reid.sullivan@imastudent.com',
+		age: 16
+		interests: ['Art', 'Drawing', 'Sculpture'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Valerie Martinez',
+		email: 'valerie.martinez@imastudent.com',
+		age: 16
+		interests: ['Athletics', 'Business'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Lia West',
+		email: 'lia.west@imastudent.com',
+		age: 14,
+		interests: ['Choir', 'Acting'],
 		desiredField: '' 
 	},
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
+		name: 'Samantha Dunnigan',
+		email: 'samantha.dunnigan@imastudent.com',
+		age: 17
+		interests: ['Metalworking', 'Art', 'Sculpture'],
 		desiredField: '' 
 	},
-	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
-		desiredField: '' 
-	},
-	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
-		desiredField: '' 
-	},
-	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
-		desiredField: '' 
-	}
 ];
 
 var mentorList = [
 	{
-		name: '',
-		email: '',
-		age:
-		interests: [''],
-		desiredField: '',
+		name: 'Daria Culton',
+		email: 'daria.culton@nonprofit.org',
+		age: 35,
+		interests: ['Reading', 'Outdoors'],
+		field: 'Tech',
 		mentee: 
 	},
 	{
@@ -87,7 +73,7 @@ var mentorList = [
 		email:
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee: 
 	}
 	{
@@ -95,7 +81,7 @@ var mentorList = [
 		email:
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee:
 	}
 	{
@@ -103,7 +89,7 @@ var mentorList = [
 		email: 
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee:
 	},
 	{
@@ -111,7 +97,7 @@ var mentorList = [
 		email:
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee: 
 	},
 	{
@@ -119,7 +105,7 @@ var mentorList = [
 		email:
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee:
 	},
 	{
@@ -127,7 +113,7 @@ var mentorList = [
 		email: 
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee:
 	},
 	{
@@ -135,25 +121,9 @@ var mentorList = [
 		email:
 		age:
 		interests:
-		desiredField:
+		field:
 		mentee: 
 	},
-	{
-		name:
-		email:
-		age:
-		interests:
-		desiredField:
-		mentee:
-	},
-	{
-		name:
-		email:
-		age:
-		interests:
-		desiredField:
-		mentee:
-	}
 ];
 db.Mentee.remove({}, function(err, mentees){
 	if(err) {
