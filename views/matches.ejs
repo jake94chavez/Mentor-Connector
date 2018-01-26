@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<html lang='en'>
+<% include ./partials/head %>
   <body>
       <header>
         <!-- My profile link button  -->
@@ -12,54 +9,11 @@
       </header>
         <div class="availableMatches">
 
-          <div class="bestMatch">
-            <div id="wholeName"
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="fullName">
-            </div>
-            <div id="jobRole">
-              <label for="jobName">Job Role:</label>
-              <input type="text" id="job" name="jobRole">
-            </div>
-            <div id="intersts">
-              <label for="name">Interests:</label>
-              <input type="text" id="interests" name="interests">
-            </div>
-            <div id="location">
-              <label for="name">Location:</label>
-              <input type="text" id="location" name="location">
-            </div>
-            <!-- Bookmark and Select buttons -->
-            <button type="button">Bookmark</button>
-              <!-- Bookmark icon -->
-            <button type="button">Select</button>
-              <!-- Select icon -->
+          <div class="otherMatches" id="otherMatches">
           </div>
-
-          <div class="otherMatches">
-            <div id="wholeName"
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="fullName">
-            </div>
-            <div id="jobRole">
-              <label for="jobName">Job Role:</label>
-              <input type="text" id="job" name="jobRole">
-            </div>
-            <div id="intersts">
-              <label for="name">Interests:</label>
-              <input type="text" id="interests" name="interests">
-            </div>
-            <div id="location">
-              <label for="name">Location:</label>
-              <input type="text" id="location" name="location">
-            </div>
-            <!-- Bookmark and Select buttons -->
-            <button type="button">Bookmark</button>
-              <!-- Bookmark icon -->
-            <button type="button">Select</button>
-              <!-- Select icon -->
-          </div>
-
-
+        </div>
+<% include ./partials/footer %>
+<% include ./partials/scripts %>
+<script type="text/javascript" src="/javascripts/main.js"></script>
   </body>
 </html>

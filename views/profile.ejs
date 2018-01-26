@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<html lang='en'>
+<% include ./partials/head %>
   <body>
     <header>
       <!-- Return arrow to Available Mentors link on left and My Profile link on right -->
@@ -17,28 +14,29 @@
     </header>
 
       <div class="profileDisplay">
-        <div> id="jobRole">
+        <div id="jobRole">
           Job Role:
         </div>
-        <div> id="industry">
+        <div id="industry">
           Industry:
         </div>
-        <div> id="interests">
+        <div id="interests">
           Interests:
         </div>
-        <div> id="location">
+        <div id="location">
           Location:
         </div>
-        <div> id="bio">
+        <div id="bio">
           Biography:
         </div>
-        <div> id="affiliations">
+        <div id="affiliations">
           Affiliations:
         </div>
-        <div> id="availability">
+        <div id="availability">
           Availibility:
         </div>
       </div>
-
+  <% include ./partials/footer %>
+<% include ./partials/scripts %>
   </body>
 </html>
