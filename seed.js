@@ -6,80 +6,70 @@ var menteeList = [
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	},
 	{
 		name: '',
 		email: '',
 		age:
 		interests: [''],
-		desiredField: '',
-		mentor: 
+		desiredField: '' 
 	}
 ];
 
