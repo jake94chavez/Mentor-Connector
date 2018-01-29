@@ -1,11 +1,77 @@
+// $(document).ready(function() {
+//   console.log('app.js loaded!');
+//   $.get('/api/mentors').success(function (mentors) {
+//   mentors.forEach(function(mentor) {
+//     renderMentor(mentor);
+//   });
+// });
+// });
+var mentorList = [
+  {
+    name: 'Daria Culton',
+    email: 'daria.culton@nonprofit.org',
+    age: 35,
+    interests: ['Reading', ' Outdoor Recreation'],
+    field: 'Tech',
+  },
+  {
+    name: 'David Hanson',
+    email: 'david.hanson@mediamixers.com',
+    age: 42,
+    interests: ['Photography', ' Film', ' Collecting'],
+    field: 'Film',
+  },
+  {
+    name: 'Daniel Brown',
+    email: 'daniel.brown@browninc.com',
+    age: 33,
+    interests: ['Athletics', ' Business', ' Fashion'],
+    field: 'Fashion',
+  },
+  {
+    name: 'Angela Garcia',
+    email: 'angela.garcia@pressstartgames.com',
+    age: 46,
+    interests: ['Reading', ' Gaming', ' Creative Writing'],
+    field: 'Video Games',
+  },
+  {
+    name: 'Heather Crosby',
+    email: 'heather.crosby@tripsolutions.com',
+    age: 36,
+    interests: ['Travel', ' Cooking', ' Health/Fitness'],
+    field: 'Travel',
+  },
+  {
+    name: 'John Applegate',
+    email: 'john.applegate@freshyfilms.com',
+    age: 28,
+    interests: ['Music', ' Film', ' Acting'],
+    field: 'Music',
+  },
+  {
+    name: 'Terry Hawthorne',
+    email: 'terry.hawthorne@graphicgals.com',
+    age: 30,
+    interests: ['Art', ' Electronics', ' Photography'],
+    field: 'Graphic Design',
+  },
+  {
+    name: 'Katie Grady',
+    email: 'katie.grady@pressstartgames.com',
+    age: 30,
+    interests: ['Gaming', ' Electronics', ' Collecting'],
+    field: 'Video Games',
+  }
+];
+
 $(document).ready(function() {
   console.log('app.js loaded!');
-  $.get('/api/mentors').success(function (mentors) {
-  mentors.forEach(function(mentor) {
+  mentorList.forEach(function(mentor) {
     renderMentor(mentor);
   });
 });
-});
+
 function generateMentorHtml(mentor) {
   var mentorHtml =
   "        <!-- one book -->" +
